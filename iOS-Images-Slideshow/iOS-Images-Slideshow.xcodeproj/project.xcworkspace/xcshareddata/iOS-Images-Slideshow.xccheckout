@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>25BBDFF2-600D-423C-8BD0-38C0E3A5E09E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOS-Images-Slideshow</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0BC85F1C7E05945B3869317DDABAC25F99786B88</key>
+		<string>https://github.com/alchimya/iOS-Images-Slideshow.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS-Images-Slideshow/iOS-Images-Slideshow.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0BC85F1C7E05945B3869317DDABAC25F99786B88</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/alchimya/iOS-Images-Slideshow.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0BC85F1C7E05945B3869317DDABAC25F99786B88</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0BC85F1C7E05945B3869317DDABAC25F99786B88</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Images-Slideshow</string>
+		</dict>
+	</array>
+</dict>
+</plist>

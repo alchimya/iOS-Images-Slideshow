@@ -41,14 +41,14 @@
     return self;
 }
 
-/*
--(void)setImages:(NSArray *)imgs{
+
+-(void)setImages:(NSMutableArray *)imgs{
     images=imgs;
     self.currentIndex=0;
     [self stop];
-    [self start];
+    //[self start];
 }
- */
+
 
 #pragma mark Public Methods and Actions
 
