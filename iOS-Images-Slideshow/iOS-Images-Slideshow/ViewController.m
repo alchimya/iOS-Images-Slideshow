@@ -66,7 +66,9 @@
     self.imageTitle.text=[self.slideShow.images objectAtIndex:index];
     self.counter.text=[NSString stringWithFormat:@"%d/%lu",index+1,(unsigned long)[self.slideShow.images count]];
 }
-
+- (void)L3SDKImagesSlideShow_Touched{
+    NSLog(@"TOUCHED");
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

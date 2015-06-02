@@ -64,12 +64,15 @@
                                                selector:@selector(tick:)
                                                userInfo: nil repeats:YES];
     [self.timer fire];
+    _isStarted=YES;
 }
 -(void)stop{
     self.currentIndex=0;
+    _isStarted=NO;
     [self resetTimer];
 }
 -(void)pause{
+    _isStarted=NO;
     [self resetTimer];
 }
 -(void)moveTo:(int)index{
@@ -85,7 +88,10 @@
 -(void)initDefaults{
     self.currentIndex=0;
     self.interval=5;
+    _isStarted=NO;
+    [self setUserInteractionEnabled:YES];
 }
+
 
 -(void)resetTimer{
     [self.timer invalidate];
@@ -120,4 +126,19 @@
     }
     
 }
+#pragma mark Touch
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    UITouch *touch = [touches anyObject];
+    
+    if ([[touch view] isEqual:self]){
+        //send event
+        if (self.delegate != NULL && [delegate respondsToSelector:@selector(L3SDKImagesSlideShow_Touched)]) {
+            [self.delegate L3SDKImagesSlideShow_Touched];
+        }
+    }
+    
+}
+
 @end

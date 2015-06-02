@@ -13,6 +13,7 @@
 @protocol L3SDKImagesSlideShowDelegate <NSObject>
 //it will be raised when an image will be loaded
 - (void)L3SDKImagesSlideShow_NextImageAtIndex:(int)index withSender:(id) sender;
+- (void)L3SDKImagesSlideShow_Touched;
 @end
 
 
@@ -21,6 +22,8 @@
 @property (nonatomic,strong)NSMutableArray*images;
 //timer interval of slideshow (default 5)
 @property (nonatomic,assign)int interval;
+//returns YES if slideshow is working otherwise returns NO
+@property (nonatomic,assign,readonly)BOOL isStarted;
 //class delegate
 @property (nonatomic,assign) id<L3SDKImagesSlideShowDelegate> delegate;
 //it allows to start the slideshow process
