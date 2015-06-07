@@ -54,6 +54,9 @@
 
 -(void)start{
     
+    if (_isStarted) {
+        return;
+    }
     
     if ([self.images count]==0) {
         return;
@@ -114,7 +117,8 @@
          NSData *data = [NSData dataWithContentsOfURL:
                             [NSURL URLWithString:imagePath]
                          ];
-         self.image = [[UIImage alloc] initWithData:data];
+         self.image=[UIImage imageWithData:data];
+         //self.image = [[UIImage alloc] initWithData:data];
          
      } else {
          self.image=[UIImage imageNamed:imagePath];
